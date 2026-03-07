@@ -1,5 +1,20 @@
-# idea
-.idea
+# Gradle files
+.gradle/
+build/
 
-# build
-build
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Minecraft Fabric specific
+run/
+.fabric/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local environment
+local.properties
