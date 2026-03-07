@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "no-gibberish",
+  "version": "1.0-SNAPSHOT",
+  "name": "No-Gibberish",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/no-gibberish/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.zickit.noGibberish.client.NoGibberishDataGenerator"
+    ],
+    "client": [
+      "org.zickit.noGibberish.client.NoGibberishClient"
+    ],
+    "main": [
+      "org.zickit.noGibberish.NoGibberish"
+    ]
+  },
+  "mixins": [
+    "no-gibberish.mixins.json",
+    {
+      "config": "no-gibberish.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}

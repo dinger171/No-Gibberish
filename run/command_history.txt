@@ -1,0 +1,3 @@
+/tellraw @s {"text":f}
+/tellraw @a {"text":"Welcome to Minecraft Tools","obfuscated":true}
+/title @a title {"text":"Welcome to Minecraft Tools","obfuscated":true}
